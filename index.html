@@ -1,94 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <div class="circle"></div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Losanj Graphics</title>
+    <title>Losanj Graphics</title>
     <link rel="stylesheet" href="style.css">
-    <!-- HTML Meta Tags -->
-    <title>Portfolio | Losanj Graphics</title>
-    <meta name="description" content="C'est mon portfolio ! Cacacacacacaca">
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://l0sanj.github.io/Portfolio-Losanj-Graphics/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Portfolio | Losanj Graphics">
-    <meta property="og:description" content="C'est mon portfolio !">
-    <meta property="og:image" content="https://l0sanj.github.io/Portfolio-Losanj-Graphics/img/1.png">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="Le twitter de Losanj">
-    <meta property="twitter:domain" content="l0sanj.github.io">
-    <meta property="twitter:url" content="https://l0sanj.github.io/Portfolio-Losanj-Graphics/">
-    <meta name="twitter:title" content="Portfolio | Losanj Graphics">
-    <meta name="twitter:description" content="Le twitter de Losanj">
-    <meta name="twitter:image" content="https://l0sanj.github.io/Portfolio-Losanj-Graphics/img/1.png">
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2T7L5SCQ6"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-V2T7L5SCQ6');
-    </script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <canvas id="background-canvas"></canvas>
-    <header>
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos de moi</a></li>
-                <li><a href="#portfolio">Mes travaux</a></li>
-                <li><a href="https://www.instagram.com">Mes réseaux</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Je suis GNGNGNGN</p>
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#accueil"><img src="img/icons/accueil.png"></a></li>
+            <li><a href="#portfolio"><img src="img/icons/work.png"></a></li>
+            <li><a href="#apropos"><img src="img/icons/apropos.png"></a></li>
+        </ul>
+    </nav>
+    <section id="accueil" class="section">
+        <div class="text"><img src="img/Accueil.png" alt="Accueil"></div>
+        <div class="image"><img src="img/2.png" alt="Accueil"></div>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <div class="project">
-                <img src="img/1.jpg" alt="Projet 1">
-                <h3>Projet 1</h3>
-                <p>Description du projet 1.</p>
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Mon Portfolio</h2>
+        <button id="prev" class="arrow">&#10094;</button>
+        <div class="carousel">
+            <img src="img/Projet_1.png" class="slide active" alt="Image 1">
+            <img src="img/Projet 2_Plan de travail 1.png" class="slide" alt="Image 2">
+            <img src="img/Projet_1.png" class="slide" alt="Image 3">
+            <img src="img/Projet 2_Plan de travail 1.png" class="slide" alt="Image 4">
+            <img src="img/Projet_1.png" class="slide" alt="Image 5">
+        </div>
+        <button id="next" class="arrow">&#10095;</button>
+    </section>
+    <section id="apropos" class="section">
+        <h2 class="section-title">À Propos de Moi</h2>
+        <div class="apropos-content">
+            <div class="image">
+                <img src="img/1.jpg" alt="À propos">
             </div>
-            <div class="project">
-                <img src="img/2.jpg" alt="Projet 2">
-                <h3>Projet 2</h3>
-                <p>Description du projet 2.</p>
+            <div class="text">
+                Je suis Losanj, un étudiant en graphisme passionné par l’image et le design. Maîtrisant la suite Adobe, Maya et AutoCAD, je mets mes compétences au service de la création visuelle, alliant technique et créativité. Mon domaine de prédilection est le développement de l’image de marque, car je crois en la puissance du design pour donner une identité forte et impactante à une entreprise. Engagé dans une démarche responsable, je choisis de travailler exclusivement avec des marques partageant des convictions écologiques. Pour moi, le graphisme est un outil essentiel pour valoriser des projets respectueux de l’environnement et promouvoir des initiatives durables à travers une communication visuelle percutante et engagée.
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2025 Losanj Graphics. Tous droits réservés.</p>
+        <div class="footer-left">© 2025 Losanj Graphics</div>
+        <div class="footer-center">
+            <a href="https://www.instagram.com/t_0.0_m?igsh=MXIyMGszdHZwZDlpZQ==" target="_blank" rel="noopener noreferrer" class="icon">
+                <img src="img/icons/insta.png" alt="Instagram">
+            </a>
+            <a href="https://www.behance.net/tomstocquart" target="_blank" rel="noopener noreferrer" class="icon">
+                <img src="img/icons/behance.png" alt="Behance">
+            </a>
+            <a href="mailto:losanjgraphics@gmail.com" class="icon">
+                <img src="img/icons/email.png" alt="Email">
+            </a>
+        </div>
+        <div class="footer-right">Zones de travail : Brunehaut / Tournai / Mons</div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
