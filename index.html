@@ -3,57 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Losanj Graphics</title> 
+    <title>Losanj Graphics | Portfolio Graphiste & Identité Visuelle</title>
     <link rel="icon" type="image/png" href="img/2.png">
-    <meta name="description" content="Découvrez le portfolio en ligne de Losanj, étudiant en graphisme passionné par l’image et le design.">
+    <meta name="description" content="Découvrez le portfolio de Losanj, graphiste passionné par l'image de marque, l'identité visuelle et le design graphique. Explorez ses créations et collaborations écologiques.">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        
+    </header>
+    
     <nav class="side-nav">
         <ul>
-            <li><a href="#accueil"><img src="img/icons/accueil.png" alt="icon accueil"></a></li>
-            <li><a href="#portfolio"><img src="img/icons/work.png" alt="icon portfolio"></a></li>
-            <li><a href="#apropos"><img src="img/icons/apropos.png" alt="icon à propos"></a></li>
+            <li><a href="#accueil" aria-label="Accueil"><img src="img/icons/accueil.png" alt="Accueil"></a></li>
+            <li><a href="#portfolio" aria-label="Portfolio"><img src="img/icons/work.png" alt="Portfolio"></a></li>
+            <li><a href="#apropos" aria-label="À propos"><img src="img/icons/apropos.png" alt="À propos"></a></li>
         </ul>
     </nav>
+    
     <section id="accueil" class="section">
-        <div class="text"><img src="img/Accueil.png" alt="Logotypes"></div>
-        <div class="image"><img src="img/2.png" alt="Logo"></div>
+        <div class="text">
+            <img src="img/Accueil.png" alt="Présentation des logotypes et design graphique">
+        </div>
+        <div class="image">
+            <img src="img/2.png" alt="Logo de Losanj Graphics">
+        </div>
     </section>
+    
     <section id="portfolio" class="section">
         <h2 class="section-title">Mon Portfolio</h2>
-        <button id="prev" class="arrow">&#10094;</button>
+        <button id="prev" class="arrow" aria-label="Image précédente">&#10094;</button>
         <div class="carousel">
-            <img src="img/Projet_1.png" class="slide active" alt="Refonte graphique">
-            <img src="img/Projet 2_Plan de travail 1.png" class="slide" alt="Affiche d'expositon">
-            <img src="img/Projet_1.png" class="slide" alt="Image 3">
-            <img src="img/Projet 2_Plan de travail 1.png" class="slide" alt="Image 4">
-            <img src="img/Projet_1.png" class="slide" alt="Image 5">
+            <img src="img/Projet_1.png" class="slide active" alt="Refonte graphique d'une marque">
+            <img src="img/Projet 2_Plan de travail 1.png" class="slide" alt="Affiche d'exposition artistique">
+            <img src="img/Projet_1.png" class="slide" alt="Création de branding et d’identité visuelle">
+            <img src="img/Projet 2_Plan de travail 1.png" class="slide" alt="Illustration et affiche promotionnelle">
+            <img src="img/Projet_1.png" class="slide" alt="Conception graphique d’un logo et charte graphique">
         </div>
-        <button id="next" class="arrow">&#10095;</button>
+        <button id="next" class="arrow" aria-label="Image suivante">&#10095;</button>
     </section>
+    
     <section id="apropos" class="section">
         <h2 class="section-title">À Propos de Moi</h2>
         <div class="apropos-content">
             <div class="image">
-                <img src="img/1.jpg" alt="Photo de moi">
+                <img src="img/1.jpg" alt="Photo de Losanj, graphiste freelance">
             </div>
             <div class="text">
-                Je suis Losanj, un étudiant en graphisme passionné par l’image et le design. Maîtrisant la suite Adobe, Maya et AutoCAD, je mets mes compétences au service de la création visuelle, alliant technique et créativité. Mon domaine de prédilection est le développement de l’image de marque, car je crois en la puissance du design pour donner une identité forte et impactante à une entreprise. Engagé dans une démarche responsable, je choisis de travailler exclusivement avec des marques partageant des convictions écologiques. Pour moi, le graphisme est un outil essentiel pour valoriser des projets respectueux de l’environnement et promouvoir des initiatives durables à travers une communication visuelle percutante et engagée.
+                <p>Je suis Losanj, un graphiste passionné par la création visuelle et l’identité de marque. Maîtrisant la suite Adobe, Maya et AutoCAD, je mets mes compétences au service de la communication graphique.</p>
+                <p>Mon objectif ? Créer des designs percutants et responsables, en collaborant avec des marques engagées dans l’écologie et le développement durable.</p>
             </div>
         </div>
     </section>
+    
     <footer>
         <div class="footer-left">© 2025 Losanj Graphics</div>
         <div class="footer-center">
-            <a href="https://www.instagram.com/t_0.0_m?igsh=MXIyMGszdHZwZDlpZQ==" target="_blank" rel="noopener noreferrer" class="icon">
+            <a href="https://www.instagram.com/t_0.0_m?igsh=MXIyMGszdHZwZDlpZQ==" target="_blank" rel="noopener noreferrer" class="icon" aria-label="Instagram">
                 <img src="img/icons/insta.png" alt="Instagram">
             </a>
-            <a href="https://www.behance.net/tomstocquart" target="_blank" rel="noopener noreferrer" class="icon">
+            <a href="https://www.behance.net/tomstocquart" target="_blank" rel="noopener noreferrer" class="icon" aria-label="Behance">
                 <img src="img/icons/behance.png" alt="Behance">
             </a>
-            <a href="mailto:losanjgraphics@gmail.com" class="icon">
+            <a href="mailto:losanjgraphics@gmail.com" class="icon" aria-label="Email">
                 <img src="img/icons/email.png" alt="Email">
             </a>
         </div>
