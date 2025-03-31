@@ -31,8 +31,3 @@ sideNavLinks.forEach(anchor => {
 });
 
 // Configuration de Google Analytics
-window.dataLayer = window.dataLayer || [];
-const gtag = (...args) => dataLayer.push(args);
-
-gtag('js', new Date());
-gtag('config', 'G-ZC9CHZ02G8');
